@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+ <beans>
+
+<!-- bean for Regidtration  -->
+   			<bean id="R" class="com.entities.Register">
+   			<property name="id" value="1"/>
+   			<property name="name" value="Vaibhavi"/>
+   			<property name="add" value="main street 123"/>
+   			<property name="email" value="gauri@gmail.com"/>
+   			<property name="pass" value="gauri@123"/>
+			
+			</bean>
+<!-- Bean for Login -->
+    <bean id="log" class="com.entities.Login">
+        <constructor-arg index="0" value="1" />
+        <constructor-arg index="1" value="gauri@gmail.com" />
+        <constructor-arg index="2" value="gauri@123" />
+    </bean>
+
+</beans>
